@@ -152,6 +152,18 @@
                     </div>
                 </div>
 
+                <div class="control-section" id="presetSection">
+                    <h3>💾 预设与历史</h3>
+                    <div class="preset-actions">
+                        <button id="savePresetBtn" class="btn-secondary btn-small">📌 保存当前预设</button>
+                        <button id="loadPresetBtn" class="btn-secondary btn-small">📂 加载预设</button>
+                        <button id="saveHistoryBtn" class="btn-secondary btn-small">📝 保存历史</button>
+                        <button id="viewHistoryBtn" class="btn-secondary btn-small">📚 历史记录</button>
+                    </div>
+                    <div id="presetListContainer" class="preset-list" style="display:none; margin-top:10px;"></div>
+                    <div id="historyListContainer" class="history-list" style="display:none; margin-top:10px;"></div>
+                </div>
+
                 <div class="control-section">
                     <button id="generateBtn" class="btn-primary">🎯 生成预览</button>
                     <button id="exportBtn" class="btn-secondary">💾 导出当前页</button>
@@ -182,6 +194,10 @@
         </div>
     </div>
 
+    <script src="js/cryptoUtils.js"></script>
+    <script src="js/localCache.js"></script>
+    <script src="js/cloudSyncManager.js"></script>
+    <script src="js/syncUI.js"></script>
     <script src="js/fontLoader.js"></script>
     <script src="js/styles.js"></script>
     <script src="js/paperEffects.js"></script>
